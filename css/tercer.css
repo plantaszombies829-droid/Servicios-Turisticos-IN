@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter Tight', sans-serif;
+    background: #eef1f4;
+    background-image: url("../imagenes/20220121_094713979_fnac22012022lminfra015.jpg_554688467.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    color: #333;
+}
+
+header {
+    background-color: rgb(168, 30, 30);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.barra h1 {
+    font-size: 24px;
+    margin-right: 300px;
+    color: white;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+nav img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin-left: auto;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdede;
+    transform: translateY(-2px);
+}
+
+main {
+    padding-top: 120px;
+    width: 88%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+main section {
+    margin-bottom: 45px;
+    padding: 30px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+main section:first-child {
+    border-left: 6px solid rgb(168, 30, 30);
+    padding: 40px;
+}
+
+main section h1 {
+    font-size: 42px;
+    color: #242424;
+    margin-bottom: 10px;
+}
+
+main section h1::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: rgb(168, 30, 30);
+    margin-top: 12px;
+    border-radius: 5px;
+}
+
+main section h2 {
+    font-size: 27px;
+    color: rgb(168, 30, 30);
+    margin-bottom: 18px;
+}
+
+main section h1 + h2 {
+    color: #555;
+    font-size: 21px;
+    font-weight: 400;
+    margin-top: 18px;
+}
+
+main section p {
+    max-width: 950px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+main section ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+main section ul li {
+    margin-bottom: 10px;
+    padding: 8px;
+    color: #444;
+}
+
+main section ul li::marker {
+    color: rgb(168, 30, 30);
+}
+
+.beneficios {
+    background: transparent;
+    box-shadow: none;
+    padding: 10px 0;
+}
+
+.beneficios article {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    min-height: 170px;
+    margin: 1%;
+    margin-left: 0;
+    padding: 25px;
+    background: white;
+    border-radius: 14px;
+    border-bottom: 4px solid rgb(168, 30, 30);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.beneficios article h3 {
+    color: #292929;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.beneficios article p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.plan-estudios {
+    background: #f8f9fa;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.plan-estudios > h2,
+.plan-estudios > p {
+    grid-column: 1 / -1;
+}
+
+.plan-estudios > p {
+    margin-bottom: 20px;
+}
+
+.modulo {
+    min-height: 205px;
+    padding: 26px 22px;
+    background: white;
+    border: 1px solid #e3e3e3;
+    border-top: 5px solid rgb(168, 30, 30);
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.modulo:hover {
+    transform: translateY(-6px);
+}
+
+.modulo h3 {
+    color: rgb(168, 30, 30);
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.modulo p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.duracion {
+    display: block;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    color: rgb(168, 30, 30);
+    font-weight: bold;
+}
+
+.contacto {
+    position: relative;
+    overflow: hidden;
+    padding: 70px 30px;
+    text-align: center;
+    background-image: url("../imagenes/infra02.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0;
+    scroll-margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.contacto::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.contacto h2,
+.contacto > p,
+.datos-contacto {
+    position: relative;
+    z-index: 2;
+}
+
+.contacto h2 {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.contacto h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: rgb(168, 30, 30);
+    margin: 12px auto;
+    border-radius: 5px;
+}
+
+.contacto p {
+    color: white;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+}
+
+.datos-contacto {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.datos-contacto div {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 30px 50px;
+    width: 420px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+}
+
+.datos-contacto h3 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.datos-contacto p {
+    color: white;
+    font-size: 18px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    overflow-y: auto;
+}
+
+.modal-contenido {
+    background: white;
+    width: 80%;
+    max-width: 650px;
+    margin: 8% auto;
+    padding: 30px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-contenido h2 {
+    color: rgb(168, 30, 30);
+    margin-bottom: 15px;
+}
+
+.modal-contenido h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.modal-contenido p {
+    line-height: 1.6;
+}
+
+.cerrar {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #555;
+}
+
+.cerrar:hover {
+    color: rgb(168, 30, 30);
+}
+
+footer {
+    background: rgb(168, 30, 30);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 0;
+}
+
+footer p {
+    margin: 5px;
+}
